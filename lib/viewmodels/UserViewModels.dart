@@ -181,7 +181,7 @@ class UserModel with ChangeNotifier implements AuthBase {
    return _userRepository.saveMessage(message);
   }
 
-  Future<List<Chat>> getAllChats(String userID)async{
+  Future<List<Chat>> getAllChats(String userID) async {
     try {
       var result = await _userRepository.getAllChats(userID);
       return result;

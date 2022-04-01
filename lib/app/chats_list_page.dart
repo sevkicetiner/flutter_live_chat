@@ -41,8 +41,7 @@ class _ChatsListPageState extends State<ChatsListPage> {
                             Navigator.of(context, rootNavigator: true).push(
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        ChangeNotifierProvider<
-                                            ChatListViewModel>(
+                                        ChangeNotifierProvider<ChatListViewModel>(
                                           create: (context) => ChatListViewModel(
                                               currentUser: _userModel.user,
                                               talkingUser: User.idProfileUrl(
